@@ -251,7 +251,6 @@
             box-shadow: var(--shadow);
             overflow: hidden;
             background: var(--soft);
-            position: relative;
         }
 
         .profile-card img {
@@ -354,10 +353,6 @@
 
         body.dark .projects {
             background: rgba(255,255,255,0.03);
-        }
-
-        .case-study {
-            border-bottom: 1px solid var(--line);
         }
 
         .work-header {
@@ -776,15 +771,16 @@
                     </article>
 
                     <article class="project-card">
-                        <h3>LeadScout</h3>
+                        <h3>Nalon LeadScout</h3>
                         <p>
-                            A Python automation tool that helps freelancers, web designers,
-                            and sales teams find local businesses with no listed websites.
+                            Python + FastAPI lead generation dashboard that helps freelancers,
+                            web designers, digital marketers, and sales teams find local businesses
+                            with no listed websites.
                         </p>
 
                         <div class="tag-row">
                             <span class="tag">Python</span>
-                            <span class="tag">Automation</span>
+                            <span class="tag">FastAPI</span>
                             <span class="tag">OpenStreetMap</span>
                             <span class="tag">Overpass API</span>
                             <span class="tag">CSV Export</span>
@@ -792,14 +788,14 @@
                         </div>
 
                         <p>
-                            Searches public business data, filters businesses without websites,
-                            scores leads, removes duplicates, and exports clean CSV files for outreach.
+                            Searches city and category data, detects missing websites, scores leads,
+                            generates outreach-ready messages, and exports CSV files for follow-up.
                         </p>
 
                         <div class="project-links">
-                            <a href="#leadscout-case-study">Case Study</a>
-                            <a href="#contact">Request Demo</a>
-                            <a class="secondary" href="#" target="_blank">GitHub Coming Soon</a>
+                            <a href="https://nalon-leadscout-rose.vercel.app/" target="_blank">Live Demo</a>
+                            <a class="secondary" href="leadscout-case-study.html">Case Study</a>
+                            <a class="secondary" href="#contact">Request Demo</a>
                         </div>
                     </article>
 
@@ -828,6 +824,7 @@
 
                         <div class="project-links">
                             <a href="#contact">Request Demo</a>
+                            <a class="secondary" href="#contact">Case Study Request</a>
                             <a class="secondary" href="#" target="_blank">GitHub Coming Soon</a>
                         </div>
                     </article>
@@ -855,69 +852,10 @@
 
                         <div class="project-links">
                             <a href="https://hydrofrontend.vercel.app/" target="_blank">Live Demo</a>
+                            <a class="secondary" href="#contact">Case Study Request</a>
                             <a class="secondary" href="#" target="_blank">GitHub Coming Soon</a>
                         </div>
                     </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="container case-study" id="leadscout-case-study">
-            <div class="work-header">
-                <div>
-                    <div class="section-label">Case Study</div>
-                    <h2 class="section-title">LeadScout</h2>
-                </div>
-
-                <p>
-                    A Python automation project built to help freelancers, web designers,
-                    agencies, and sales teams find businesses that may need websites or digital services.
-                </p>
-            </div>
-
-            <div class="section-grid">
-                <div class="text-block">
-                    <p>
-                        <strong>LeadScout</strong> searches public OpenStreetMap business data
-                        and identifies local businesses with no listed website. The goal is to make
-                        outreach faster by giving freelancers and agencies a clean list of businesses
-                        they can verify and contact.
-                    </p>
-
-                    <p>
-                        The tool searches by city and business category, filters businesses without
-                        websites, creates Google Maps and Google Search verification links, scores each
-                        lead, removes duplicate businesses, and exports the results to a clean CSV file.
-                    </p>
-
-                    <p>
-                        In testing, LeadScout generated <strong>1,711 South African business leads</strong>
-                        across Johannesburg, Cape Town, Durban, Pretoria, and Sandton.
-                    </p>
-
-                    <div class="actions">
-                        <a class="btn primary" href="#contact">Request Demo</a>
-                        <a class="btn" href="#work">Back to Projects</a>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="section-label">Features</div>
-
-                    <div class="pill-wrap">
-                        <span class="pill">Finds businesses by city</span>
-                        <span class="pill">Finds businesses by category</span>
-                        <span class="pill">Uses free OpenStreetMap data</span>
-                        <span class="pill">Uses Overpass API</span>
-                        <span class="pill">Detects missing websites</span>
-                        <span class="pill">Creates Google Maps links</span>
-                        <span class="pill">Creates Google Search links</span>
-                        <span class="pill">Scores lead quality</span>
-                        <span class="pill">Removes duplicates</span>
-                        <span class="pill">Exports clean CSV files</span>
-                        <span class="pill">Fallback API servers</span>
-                        <span class="pill">Built for outreach</span>
-                    </div>
                 </div>
             </div>
         </section>

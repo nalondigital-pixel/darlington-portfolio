@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nalon LeadScout Case Study | Darlington Mponda</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #171717;
+            --muted: #666666;
+            --line: #e9e9e9;
+            --card: #ffffff;
+            --soft: #f7f7f8;
+            --blue: #2563eb;
+            --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+            --radius: 26px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        .back {
+            display: inline-flex;
+            margin-bottom: 40px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: var(--soft);
+            font-weight: 700;
+        }
+
+        .hero {
+            padding: 56px 34px;
+            border-radius: 34px;
+            background:
+                radial-gradient(circle at top right, rgba(37,99,235,0.16), transparent 30%),
+                var(--soft);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+            margin-bottom: 34px;
+        }
+
+        .eyebrow {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #9ca3af;
+            font-weight: 900;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-family: "Segoe Print", "Comic Sans MS", cursive;
+            font-size: clamp(44px, 7vw, 78px);
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 18px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 19px;
+            line-height: 1.8;
+            max-width: 760px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 22px;
+            border-radius: 999px;
+            font-weight: 800;
+            border: 1px solid var(--line);
+            background: var(--card);
+            transition: all 0.25s ease;
+        }
+
+        .btn.primary {
+            background: var(--blue);
+            color: white;
+            border-color: var(--blue);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 30px;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: var(--muted);
+            line-height: 1.85;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        ul, ol {
+            color: var(--muted);
+            line-height: 1.9;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .pill-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .pill {
+            padding: 10px 13px;
+            border-radius: 999px;
+            background: var(--soft);
+            border: 1px solid var(--line);
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--muted);
+        }
+
+        .result {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--blue);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 820px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 42px 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <a class="back" href="index.html">← Back to Portfolio</a>
+
+        <section class="hero">
+            <div class="eyebrow">Case Study</div>
+            <h1>Nalon LeadScout</h1>
+            <p class="subtitle">
+                Python + FastAPI lead generation dashboard built to help freelancers,
+                web designers, digital marketers, and sales teams find local businesses
+                with no listed websites.
+            </p>
+
+            <div class="actions">
+                <a class="btn primary" href="https://nalon-leadscout-rose.vercel.app/" target="_blank">Open Live Demo</a>
+                <a class="btn" href="index.html#contact">Request Demo</a>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Tech Stack</h3>
+                <div class="pill-wrap">
+                    <span class="pill">Python</span>
+                    <span class="pill">FastAPI</span>
+                    <span class="pill">Uvicorn</span>
+                    <span class="pill">Jinja2</span>
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">Pandas</span>
+                    <span class="pill">Requests</span>
+                    <span class="pill">OpenStreetMap</span>
+                    <span class="pill">Overpass API</span>
+                    <span class="pill">CSV Automation</span>
+                    <span class="pill">Google Sheets</span>
+                    <span class="pill">Gmail Draft Workflow</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Overview</h2>
+                <p>
+                    <strong>Nalon LeadScout</strong> is a lead generation automation tool built to help
+                    freelancers, web designers, digital marketers, and sales teams find local businesses
+                    with no listed websites.
+                </p>
+                <p>
+                    The system uses free OpenStreetMap data through the Overpass API to search businesses
+                    by city and category, detect missing websites, score leads, generate outreach-ready
+                    messages, and export CSV files for sales follow-up.
+                </p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h2>Problem</h2>
+                <p>
+                    Many small businesses are listed online but do not have a proper website. This creates
+                    an opportunity for freelancers, agencies, and service providers to offer websites, SEO,
+                    digital marketing, POS systems, or other business services.
+                </p>
+                <p>
+                    The challenge is that finding these businesses manually takes too much time.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Solution</h2>
+                <p>
+                    I built Nalon LeadScout as a web dashboard that allows users to select a city and
+                    business category, then automatically generate a list of businesses with no listed website.
+                </p>
+                <p>
+                    The app filters and scores leads, creates Google Maps and Google Search verification
+                    links, prepares outreach messages, and exports clean CSV files for follow-up.
+                </p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Web dashboard built with FastAPI</li>
+                    <li>City and business category selection</li>
+                    <li>Uses free OpenStreetMap / Overpass API data</li>
+                    <li>Detects businesses with no listed website</li>
+                    <li>Generates Google Maps verification links</li>
+                    <li>Generates Google Search verification links</li>
+                    <li>Scores leads based on contact and location data</li>
+                    <li>Labels leads by quality</li>
+                    <li>Recommends best contact channel</li>
+                    <li>Generates outreach-ready email messages</li>
+                    <li>Removes duplicate businesses</li>
+                    <li>Handles failed API servers using fallback servers</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>New Web App Features</h2>
+                <ul>
+                    <li>Button-based dashboard instead of running scripts manually</li>
+                    <li>Stats cards showing total leads, email-ready leads, high-quality leads, and leads with phone numbers</li>
+                    <li>Download buttons for full leads, email-ready leads, and outreach messages CSV files</li>
+                    <li>Lead results table with business name, category, city, phone, email, lead quality, score, best contact channel, maps link, and search link</li>
+                    <li>Portfolio-ready interface for demos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h2>Workflow</h2>
+                <ol>
+                    <li>User selects a city and business category.</li>
+                    <li>The app searches OpenStreetMap business data.</li>
+                    <li>Businesses with listed websites are filtered out.</li>
+                    <li>Remaining leads are cleaned and deduplicated.</li>
+                    <li>Each lead is scored based on available contact/location data.</li>
+                    <li>The system generates verification links and outreach messages.</li>
+                    <li>User downloads CSV files for outreach.</li>
+                    <li>Email-ready leads can be uploaded to Google Sheets.</li>
+                    <li>Gmail drafts can be created for review before sending.</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h2>Result</h2>
+                <div class="result">1,711 leads generated</div>
+                <p>
+                    In testing, LeadScout generated <strong>1,711 South African business leads</strong>
+                    across Johannesburg, Cape Town, Durban, Pretoria, and Sandton.
+                </p>
+                <p>
+                    The result is a working FastAPI web dashboard that turns lead generation into a simple
+                    button-based workflow.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Business Use Cases</h2>
+            <ul>
+                <li>Web designers can find businesses that need websites.</li>
+                <li>Digital marketing agencies can find local businesses with weak online presence.</li>
+                <li>POS/payment companies can find restaurants, salons, bakeries, car washes, and retail businesses.</li>
+                <li>Sales teams can generate niche-specific local business lists.</li>
+                <li>Freelancers can use the tool to find prospects and offer one-page websites or digital services.</li>
+            </ul>
+
+            <div class="actions">
+                <a class="btn primary" href="https://nalon-leadscout-rose.vercel.app/" target="_blank">Open Live Demo</a>
+                <a class="btn" href="index.html#contact">Request Demo</a>
+                <a class="btn" href="index.html">Back to Portfolio</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
